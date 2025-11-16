@@ -24,3 +24,5 @@ see [the readme](/claude-messages-visualizer/README.md) for more info.
 very simple project management tool for creating and updating tasks. can integreate easily with claude code as a replacement for the TodoWrite tool, so you can have persistent todos.
 
 <img width="634" height="496" alt="Screenshot 2025-11-15 at 9 08 06 PM" src="https://github.com/user-attachments/assets/e344f2d4-c781-4435-8eb1-a82adde41053" />
+
+see [the readme](/pm/README.md) for more info.

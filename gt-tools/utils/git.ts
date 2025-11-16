@@ -27,8 +27,10 @@ export async function getStatus(): Promise<GitStatus> {
   for (const line of status.trim().split("\n")) {
     if (!line) continue;
 
+    // Git porcelain format: XY<space>PATH where X and Y are status codes
+    // Extract status code (first 2 chars) and file path (everything after index 2, trimmed)
     const statusCode = line.substring(0, 2);
-    let file = line.substring(3);
+    let file = line.substring(2).trim(); // Get everything after status codes and trim whitespace
 
     // Handle rename (R) and copy (C) operations which have format: "old -> new"
     // We want to track the new filename
