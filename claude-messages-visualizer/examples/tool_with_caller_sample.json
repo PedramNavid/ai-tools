@@ -1,0 +1,47 @@
+{
+  "id": "msg_01JKL012",
+  "type": "message",
+  "role": "assistant",
+  "content": [
+    {
+      "type": "text",
+      "text": "Let me check the weather for you."
+    },
+    {
+      "type": "tool_use",
+      "id": "toolu_01ABC123",
+      "name": "get_weather",
+      "caller": {
+        "type": "direct"
+      },
+      "input": {
+        "location": "San Francisco, CA"
+      }
+    },
+    {
+      "type": "text",
+      "text": "Now let me analyze the data with code."
+    },
+    {
+      "type": "tool_use",
+      "id": "toolu_01DEF456",
+      "name": "fetch_data",
+      "caller": {
+        "type": "code_execution_20250825"
+      },
+      "input": {
+        "endpoint": "/api/temperature",
+        "params": {
+          "city": "San Francisco"
+        }
+      }
+    }
+  ],
+  "model": "claude-3-5-sonnet-20241022",
+  "stop_reason": "tool_use",
+  "stop_sequence": null,
+  "usage": {
+    "input_tokens": 320,
+    "output_tokens": 180
+  }
+}

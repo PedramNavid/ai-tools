@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(pm project:*)",
+      "Bash(pm add:*)",
+      "Bash(pm task update:*)",
+      "Bash(pm done:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

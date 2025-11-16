@@ -1,0 +1,28 @@
+{
+  "id": "msg_01ABC123",
+  "type": "message",
+  "role": "assistant",
+  "content": [
+    {
+      "type": "text",
+      "text": "I'll run that code for you."
+    },
+    {
+      "type": "server_tool_use",
+      "id": "toolu_server_01XYZ789",
+      "caller": {
+        "type": "python_interpreter"
+      },
+      "input": {
+        "code": "import pandas as pd\nimport numpy as np\n\ndf = pd.DataFrame({\n    'name': ['Alice', 'Bob', 'Charlie'],\n    'age': [25, 30, 35],\n    'score': [85, 90, 95]\n})\n\nprint(df)\nprint(f\"\\nAverage age: {df['age'].mean()}\")\nprint(f\"Average score: {df['score'].mean()}\")"
+      }
+    }
+  ],
+  "model": "claude-3-5-sonnet-20241022",
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "usage": {
+    "input_tokens": 250,
+    "output_tokens": 150
+  }
+}

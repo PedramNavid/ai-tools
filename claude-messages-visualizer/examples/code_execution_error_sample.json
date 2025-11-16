@@ -1,0 +1,23 @@
+{
+  "id": "msg_01GHI789",
+  "type": "message",
+  "role": "assistant",
+  "content": [
+    {
+      "type": "code_execution_tool_result",
+      "content": {
+        "content": [],
+        "return_code": 1,
+        "stderr": "Traceback (most recent call last):\n  File \"script.py\", line 5, in <module>\n    result = 10 / 0\nZeroDivisionError: division by zero",
+        "stdout": "Starting calculation...\n"
+      }
+    }
+  ],
+  "model": "claude-3-5-sonnet-20241022",
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "usage": {
+    "input_tokens": 150,
+    "output_tokens": 80
+  }
+}

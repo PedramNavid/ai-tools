@@ -1,0 +1,23 @@
+{
+  "id": "msg_01DEF456",
+  "type": "message",
+  "role": "assistant",
+  "content": [
+    {
+      "type": "code_execution_tool_result",
+      "content": {
+        "content": [],
+        "return_code": 0,
+        "stderr": "",
+        "stdout": "=== DELIVERY LOGS FOR J_42 (WARN/ERROR only) ===\n2025-06-02T13:30:00Z [ERROR] Job J_42 encountered network timeout\n2025-06-02T13:30:15Z [WARN] Job J_42 retrying connection (attempt 2/3)\n2025-06-02T13:30:30Z [ERROR] Job J_42 failed after 3 attempts\n\nTotal errors: 2\nTotal warnings: 1\nJob status: FAILED"
+      }
+    }
+  ],
+  "model": "claude-3-5-sonnet-20241022",
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "usage": {
+    "input_tokens": 180,
+    "output_tokens": 120
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "id": "msg_01XFDUDYJgAACzvnptvVoYEL",
+  "type": "message",
+  "role": "assistant",
+  "content": [
+    {
+      "type": "text",
+      "text": "I'll help you check the weather in San Francisco."
+    },
+    {
+      "type": "tool_use",
+      "id": "toolu_01T1x1fJ34qAmk2tNTrN7Up6",
+      "name": "get_weather",
+      "input": {
+        "location": "San Francisco, CA"
+      }
+    }
+  ],
+  "model": "claude-3-5-sonnet-20241022",
+  "stop_reason": "tool_use",
+  "stop_sequence": null,
+  "usage": {
+    "input_tokens": 385,
+    "output_tokens": 89
+  }
+}
